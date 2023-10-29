@@ -13,5 +13,7 @@ enum days {
 }
 
 function isWeekend(day:days):boolean{
-  return day>days.Friday;  
+  //return day>days.Friday;  
+  //гаразд :(
+  return day===days.Saturday || day===days.Sunday;
 }

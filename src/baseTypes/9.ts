@@ -7,7 +7,10 @@ type page = {
   likes: number,
   accounts:string[],
   status: "open" | "closed" | "close",
-  details?:object
+  details?:{
+    createAt: Date,
+    updateAt: Date
+  }
 }
 const page1:page = {
   title: 'The awesome page',
